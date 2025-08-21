@@ -5,7 +5,7 @@ Exercícios Práticos - Par Nome/Valor
 */
 
 // 1. Declare uma variável string e exiba seu valor no console.
-
+      
 // 2. Crie um objeto com pelo menos 3 pares nome/valor e exiba uma das propriedades.
 
 // 3. Crie um array com 5 elementos e exiba o terceiro elemento.
