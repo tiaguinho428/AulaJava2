@@ -6,7 +6,7 @@ Exercícios Práticos - Par Nome/Valor
 
 // 1. Declare uma variável string e exiba seu valor no console.
 let minhaString = "Olá, mundo!";
-console.log(minhaString);       
+console.log(minhaString);
 
 // 2. Crie um objeto com pelo menos 3 pares nome/valor e exiba uma das propriedades.
 let meuObjeto = {
@@ -15,56 +15,56 @@ let meuObjeto = {
     cidade: "São Paulo"
 };
 console.log(meuObjeto.nome);
-
 // 3. Crie um array com 5 elementos e exiba o terceiro elemento.
 let meuArray = [10, 20, 30, 40, 50];
-console.log(meuArray[2]);                   
+console.log(meuArray[2]);
 
 // 4. Crie um objeto e adicione uma nova propriedade dinamicamente.
 meuObjeto.profissao = "Engenheiro";
-console.log(meuObjeto); 
+console.log(meuObjeto);
 
 // 5. Mostre como acessar um valor de um objeto usando colchetes e uma variável.
-let chave = "idade";        
+let chave = "idade";
 console.log(meuObjeto[chave]);
 
 // 6. Crie uma função que recebe um objeto e exibe as chaves e valores (usando for...in).
 function exibirChavesValores(obj) {
     for (let chave in obj) {
-        console.log(`${chave}: ${obj[chave]}`);
+        console.log(${chave}: ${obj[chave]});
     }
 }
 exibirChavesValores(meuObjeto);
 
 // 7. Declare um objeto aninhado (objeto dentro de objeto) e exiba um valor profundo.
-let carro = {
-    marca: "Toyota",
-    modelo: "Corolla",
-    motor: {
-        cilindros: 4,
-        potencia: "150cv",
-        combustivel: "Gasolina"
+let objetoAninhado = {
+    pessoa: {
+        nome: "Maria",
+        endereco: {
+            rua: "Rua A",
+            cidade: "Rio de Janeiro"
+        }
     }
 };
-console.log(carro.motor.potencia);  // acessando valor profundo
+console.log(objetoAninhado.pessoa.endereco.cidade);
 
 // 8. Crie um array e mostre que o índice é o nome e o valor é o conteúdo.
-let frutas = ["Maçã", "Banana", "Laranja"];
-for (let indice in frutas) {
-    console.log(`Índice: ${indice}, Valor: ${frutas[indice]}`);
-}
+let arrayNomes = ["Ana", "Bruno", "Carlos"];
+arrayNomes.forEach((nome, indice) => {
+    console.log(Índice: ${indice}, Nome: ${nome});
+});
 
 // 9. Crie uma variável com escopo global e outra local dentro de função e mostre seus valores.
-let variavelGlobal = "Sou Global";
+let variavelGlobal = "Eu sou global";
 
-function mostrarEscopos() {
-    let variavelLocal = "Sou Local";
-    console.log("Dentro da função:", variavelGlobal, "e", variavelLocal);
+function minhaFuncao() {
+    let variavelLocal = "Eu sou local";
+    console.log(variavelLocal);
 }
-mostrarEscopos();
-console.log("Fora da função:", variavelGlobal);
+
+console.log(variavelGlobal);
+minhaFuncao();
 
 // 10. Modifique o valor de uma propriedade de um objeto e exiba antes e depois.
-console.log("Antes:", meuObjeto.cidade);
-meuObjeto.cidade = "Rio de Janeiro";
-console.log("Depois:", meuObjeto.cidade);
+console.log("Antes:", meuObjeto.idade);
+meuObjeto.idade = 31;
+console.log("Depois:", meuObjeto.idade);
