@@ -26,7 +26,7 @@ console.log(pessoa);
 
 // 5. Adicione um método que retorne uma string usando propriedades do objeto.
 pessoa.apresentar = function() {
-    return Olá, meu nome é ${this.nome} e tenho ${this.idade} anos.;
+    return `Olá, meu nome é ${this.nome} e tenho ${this.idade} anos.`;
 };
 console.log(pessoa.apresentar());
 
@@ -43,7 +43,9 @@ console.log(empresa.endereco.cidade);
 
 // 7. Itere sobre as propriedades do objeto e exiba cada par nome/valor.
 for (let chave in pessoa) {
-    console.log(${chave}: ${pessoa[chave]});
+    if (pessoa.hasOwnProperty(chave)) {
+        console.log(`${chave}: ${pessoa[chave]}`);
+    }
 }
 
 // 8. Clone um objeto usando spread e altere uma propriedade no clone.
@@ -60,6 +62,6 @@ console.log(obj1 === obj2); // false, porque são referências diferentes na mem
 const carro = { marca: "Toyota", modelo: "Corolla" };
 Object.freeze(carro);
 carro.modelo = "Civic"; // Tentativa de alteração
-console.log(carro); // Permanece inalterado { marca: "Toyota", modelo: "Corolla" }
+console.log(carro); // Permanece inalterado { marca: "Toyota", modelo: "Corolla" }
 
 

@@ -10,33 +10,32 @@ console.log(meuArray[2]);
 
 // 2. Adicione um elemento ao final do array.
 const meuArray2 = [1, 2, 3, 4, 5];
-meuArray.push(6);
-console.log(meuArray);
+meuArray2.push(6);
+console.log(meuArray2);
 
 // 3. Remova o primeiro elemento do array.
 const meuArray3 = [1, 2, 3, 4, 5];
-meuArray.shift();
-console.log(meuArray);
+meuArray3.shift();
+console.log(meuArray3);
 
 // 4. Use map para transformar todos os elementos em strings maiúsculas.
 const meuArray4 = ['maçã', 'banana', 'laranja'];
-const arrayMaiusculas = meuArray.map(item => item.toUpperCase());
-console.log(arrayMaiusculas)
+const arrayMaiusculas = meuArray4.map(item => item.toUpperCase());
+console.log(arrayMaiusculas);
 
 // 5. Use filter para criar um novo array apenas com números pares.
 const meuArray5 = [1, 2, 3, 4, 5, 6];
-const numerosPares = meuArray.filter(num => num % 2 === 0);
+const numerosPares = meuArray5.filter(num => num % 2 === 0);
 console.log(numerosPares);
-
 
 // 6. Use reduce para somar todos os números de um array.
 const meuArray6 = [1, 2, 3, 4, 5];
-const soma = meuArray.reduce((acumulador, valorAtual) => acumulador + valorAtual, 0);
+const soma = meuArray6.reduce((acumulador, valorAtual) => acumulador + valorAtual, 0);
 console.log(soma);                  
 
 // 7. Use find para encontrar o primeiro elemento maior que 10.
 const meuArray7 = [5, 8, 12, 15, 3];
-const primeiroMaiorQue10 = meuArray.find(num => num > 10);
+const primeiroMaiorQue10 = meuArray7.find(num => num > 10);
 console.log(primeiroMaiorQue10);                
 
 // 8. Ordene um array de números em ordem crescente.
@@ -52,7 +51,7 @@ console.log(meuArray9);
 // 10. Faça a troca de valores entre dois índices usando destructuring.
 const meuArray10 = [10, 20, 30, 40, 50];
 let index1 = 1; 
-let index2 = 3; 
+let index2 = 3;
 [meuArray10[index1], meuArray10[index2]] = [meuArray10[index2], meuArray10[index1]];
 console.log(meuArray10);
 
